@@ -65,6 +65,10 @@ body{
   visibility: hidden;
   opacity: 0;
 }
+.nav.open{
+  visibility: visible;
+  opacity: 1;
+}
 .nav ul{
   margin: auto;
   list-style: none;
@@ -91,6 +95,11 @@ body{
   opacity: 0;
   transform: translateY(100%);
   transition: color 0.6 cubic-bezier(.97, .02, .01, .98), transform 1s ease, opacity 0.3 ease;
+}
+.nav.open a{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s, calc(0.05s * var);
 }
 .nav a:hover{
   color: hsl(0, 0%, 90%);

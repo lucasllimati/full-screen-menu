@@ -6,6 +6,6 @@ function nav(){
     navToggler.classList.toggle("active");
   }
 
-  navtoggler.addEventListener("click", togglerNav);
+  navToggler.addEventListener("click", togglerNav);
 }
 nav();

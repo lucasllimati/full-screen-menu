@@ -38,6 +38,9 @@ body{
   display: block;
   transition: transform 0.5s ease;
 }
+.nav-toggler.active span{
+  transform: translateY(-100%);
+}
 .nav-toggler span::after{
   content: attr(data-text);
   position: absolute;

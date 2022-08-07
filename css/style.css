@@ -28,8 +28,10 @@ body{
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
-  /* border: none; */
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+  overflow: hidden;
   text-transform: uppercase;
   z-index: 11;
 }

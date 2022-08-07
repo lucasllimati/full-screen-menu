@@ -33,6 +33,18 @@ body{
   text-transform: uppercase;
   z-index: 11;
 }
+.nav-toggler span{
+  position: relative;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.nav-toggler span::after{
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
 .nav{
   display: none;
 }

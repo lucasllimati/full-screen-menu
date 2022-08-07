@@ -62,3 +62,31 @@ body{
   display: flex;
   transition: all 0.5s ease;
 }
+.nav ul{
+  margin: auto;
+  list-style: none;
+  padding: 80px 15px;
+}
+.nav li{
+  text-align: center;
+  line-height: 1;
+  overflow-y: hidden;
+}
+.van li+li{
+  margin-top: 30px;
+}
+.nav a{
+  color: hsl(144, 50%, 55%);
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0 15px;
+  position: relative;
+  transition: color 0.6 cubic-bezier(.97, .02, .01,.98), transform 1s ease, opacity 0.3 ease;
+}
+.nav a:hover{
+  color: hsl(0, 0%, 90%);
+}

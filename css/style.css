@@ -99,7 +99,7 @@ body{
 .nav.open a{
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0s, calc(0.05s * var);
+  transition-delay: 0s, calc(0.05s * var(--i));
 }
 .nav a:hover{
   color: hsl(0, 0%, 90%);

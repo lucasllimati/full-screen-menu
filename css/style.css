@@ -57,10 +57,13 @@ body{
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: hsl(144, 20%, 10%);
+  background-color: hsl(244, 20%, 10%);
   z-index: 10;
   display: flex;
+  overflow-y: auto;
   transition: all 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
 }
 .nav ul{
   margin: auto;
@@ -85,6 +88,8 @@ body{
   text-decoration: none;
   padding: 0 15px;
   position: relative;
+  opacity: 0;
+  transform: translateY(100%);
   transition: color 0.6 cubic-bezier(.97, .02, .01, .98), transform 1s ease, opacity 0.3 ease;
 }
 .nav a:hover{
